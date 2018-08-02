@@ -1,0 +1,27 @@
+<div class="card">
+
+  <div class="card-body">
+
+    <!-- Agregar la funcion que hara el formulario al boton -->
+    <form (submit)="addTask(newTitle, newDescription)">
+
+      <div class="form-group">
+        <!-- con # colocas un id para type script -->
+        <input class="form-control" type="text" placeholder="task title" #newTitle>
+      </div>
+
+      <div class="form-group">
+
+        <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Task Description" #newDescription ></textarea>
+          
+      </div>
+
+      <button class="btn btn-block btn-primary">
+        Send
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
